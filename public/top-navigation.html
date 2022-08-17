@@ -1,0 +1,51 @@
+<head><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil"></head>
+
+<nav class="navbar navbar-expand-md" style="background-color:#e3f2fd">
+    <a class="navbar-brand" href="home.html">
+        <img src="images/musicity_logo.png" width="30" height="30" class="d-inline-block align-top" alt=""><i style="font-family:Allerta Stencil,Sans-serif; color: black;"> Musicity</i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" id="nowMenu">
+                <a class="nav-link" href="" id="now" onClick="listSongs()"><b style="font-family:Allerta Stencil,Sans-serif; color: black;">Music</b></a>
+            </li>
+            <li class="nav-item" id="contactMenu">
+                <a class="nav-link" href="#" id="contactUs" data-toggle="modal" data-target="#contactModal">
+                    <b style="font-family:Allerta Stencil,Sans-serif; color: black;">Contact Us</b>
+                </a>
+            </li>
+            <li class="nav-item" id="aboutMenu">
+                <a class="nav-link" href="#" id="about" data-toggle="modal" data-target="#messageModal">
+                    <b style="font-family:Allerta Stencil,Sans-serif; color: black;">About Us</b>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item" id="registerMenu">
+                <a class="nav-link" href="#" id="register" data-toggle="modal" data-target="#registerModal">
+                    <b style="font-family:Allerta Stencil,Sans-serif; color: black;">Register</b>
+                </a>
+            </li>
+            <li class="nav-item" id="loginMenu">
+                <a class="nav-link" href="#" id="login" data-toggle="modal" data-target="#loginModal">
+                    <b style="font-family:Allerta Stencil,Sans-serif; color: black;">Login</b>
+                </a>
+            </li>
+            <li class="nav-item" id="logoutMenu" style="display: none;">
+                <a class="nav-link" href="#" id="logout" onclick="logoutMe();">
+                    <b style="font-family:Allerta Stencil,Sans-serif; color: black;">Logout</b>
+                </a>
+            </li>
+            <li class="nav-item" id="editMenu" style="display:none;">
+                <a class="nav-link" href="edit.html">
+                    <b style="font-family:Allerta Stencil,Sans-serif; color: black;"><img src="images/profile.png" width="35px" height="35px"</b>
+                </a>
+            </li>
+        </ul> 
+    </div>
+</nav>
+
