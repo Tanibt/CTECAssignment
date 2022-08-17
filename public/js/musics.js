@@ -19,7 +19,7 @@ function getMusicData() {
 
 function getInfoData(){
     var request = new XMLHttpRequest();
-    request.open('GET', "http://localhost:8080/allMusics", true);
+    request.open('GET', music_url, true);
     //This function will be called when data returns from the web api    
     request.onload = function () {
         //get all the musics records into our music array        
