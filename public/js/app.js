@@ -16,3 +16,5 @@ var login_array = []
 var starBWImage = 'images/star_bw.png';
 var starImage = 'images/star.png';
 var rating = 0;
+var translate_url = new URL("https://cors-anywhere.herokuapp.com/https://a04xh5sjed.execute-api.us-east-1.amazonaws.com/translate/translate")
+var new_text="";
