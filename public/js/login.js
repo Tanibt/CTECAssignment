@@ -37,6 +37,7 @@ function loginMe() {
     var password = document.getElementById("passwordLogin").value;
     var payload = {username:username, password:password}
     loginUser.send(JSON.stringify(payload));
+    sendEmail();
 }
 
 function loginShowPassword() {
@@ -46,4 +47,20 @@ function loginShowPassword() {
     } else {
         x.type = "password";
     }
+}
+
+function sendEmail(){
+    var send = new XMLHttpRequest();
+
+    send.open("POST",sns_url, true);
+    send.setRequestHeader("Content-type", "application/json");
+    var payload={"message": "Successfully Logged In"};
+    send.send(JSON.stringify(payload));
+    console.log(payload)
+    send.onload = function () {
+        array2 = JSON.parse(send.responseText);
+        console.log(array2);
+    };
+
+
 }
