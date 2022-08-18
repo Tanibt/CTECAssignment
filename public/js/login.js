@@ -54,7 +54,8 @@ function sendEmail(){
 
     send.open("POST",sns_url, true);
     send.setRequestHeader("Content-type", "application/json");
-    var payload={"message": "Successfully Logged In"};
+    var trans = document.getElementById("usernameLogin").value;
+    var payload={"message": trans + ", You Have Successfully Logged In."};
     send.send(JSON.stringify(payload));
     console.log(payload)
     send.onload = function () {
