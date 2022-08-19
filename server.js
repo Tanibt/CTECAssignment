@@ -19,7 +19,7 @@ app.route('/deleteComment/:commentId').delete(commentController.deleteComment);
 app.route('/profile').get(profileController.getAllProfiles);
 app.route('/profile').post(profileController.addProfile);
 app.route('/profile').put(profileController.updateProfile);
-app.route('/profile').delete(profileController.deleteProfile);
+app.route('/deleteProfile').delete(profileController.deleteProfile);
 app.route('/login').post(profileController.loginProfile);
 app.route('/user').post(profileController.getProfile);
 
