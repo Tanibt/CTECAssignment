@@ -2,7 +2,7 @@ function registerMe() {
 
     var registerUser = new XMLHttpRequest();
 
-    registerUser.open("POST", "/profile, true)
+    registerUser.open("POST", "/profile", true)
     registerUser.setRequestHeader("Content-Type", "application/json");
     registerUser.onload = function () {
         $('#registerModal').modal('hide');
